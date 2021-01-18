@@ -1,8 +1,14 @@
 <section class="pd-users-section">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                
+            <div class="col-12 text-center">
+                <div *ngFor="let user of usersList">
+                    <h2 class="text-center">Main User</h2>
+                    <img src="{{user.avatar}}">
+                    <h4>Name:{{user.first_name}} {{user.last_name}} </h4>
+                    <h5>User ID: {{user.id}}</h5>
+                    <h6>Email:{{user.email}} </h6>
+                </div>
             </div>
         </div>
     </div>
