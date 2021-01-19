@@ -5,5 +5,4 @@ export class Users{
     last_name?: string;
     avatar?: string;
 
-
 }

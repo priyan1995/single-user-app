@@ -2,14 +2,17 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <div *ngFor="let user of usersList">
+                <div>
                     <h2 class="text-center">Main User</h2>
-                    <img src="{{user.avatar}}">
-                    <h4>Name:{{user.first_name}} {{user.last_name}} </h4>
-                    <h5>User ID: {{user.id}}</h5>
-                    <h6>Email:{{user.email}} </h6>
+                    <img src="{{users?.avatar}}">
+                    <h4>Name:{{users?.first_name}} {{users?.last_name}} </h4>
+                    <h5>User ID: {{users?.id}}</h5>
+                    <h6>Email:{{users?.email}} </h6>
                 </div>
             </div>
         </div>
     </div>
+   <!-- <pre>
+    {{users | json}}
+   </pre> -->
 </section>

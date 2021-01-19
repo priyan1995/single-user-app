@@ -11,8 +11,8 @@ export class UsersService {
 
   constructor(private _http: HttpClient) { }
 
-  getUserInfo(): Observable<Users[]>{
-    return this._http.get<Users[]>(environment.apiUrl );
+  getUserInfo(): Observable<Users>{
+    return this._http.get<Users>(environment.apiUrl + '/users/2' );
   }
 
 

@@ -5,10 +5,8 @@
 export const environment = {
   production: false,
   appName: "Single User App",
-  apiUrl: 'https://reqres.in/api/users/2',
-  pusher: {
-    key: ''
-  }
+  apiUrl: 'https://reqres.in/api'
+  
 };
 
 /*
